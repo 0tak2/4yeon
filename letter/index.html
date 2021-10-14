@@ -40,6 +40,10 @@
     window.onload = function() {
         letterName = getLetterName();
         document.getElementById("title").innerHTML = letterName;
+        if (!letterName) {
+            alert("잘못된 접근입니다. 링크를 다시 확인해주세요.");
+            document.getElementById("title").innerHTML = 'Error';
+        }
     }
 
     function handleButton() {
