@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bower": "^1.8.12"
+  },
+  "name": "4yeon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0tak2/4yeon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0tak2/4yeon/issues"
+  },
+  "homepage": "https://github.com/0tak2/4yeon#readme",
+  "description": ""
+}
