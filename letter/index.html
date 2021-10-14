@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="yyeon">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/letter.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">
+    <div id="title"></div>
+    <div id="welcome_panel">
+        <p id="welcome_msg">이 페이지는 암호로 보호되어있습니다. 아래에 암호를 입력하고 [읽기] 버튼을 누르세요.</p>
+        <div class="flex-container">
+            <input id="key" />
+            <button onclick="handleButton()">읽기</button>
+        </div>
+    </div>
+    <div id="content" style="display: none;">
+        이곳에 복호화된 텍스트가 표시됩니다.
+    </div>
+  </div>
+  <script type="text/javascript" src="./letter_data.js"></script>
+  <script type="text/javascript" src="../bower_components/crypto-js/crypto-js.js"></script>
+  <script type="text/javascript" src="./letter.js"></script>
+  <script type="text/javascript" src="./helper/url.js"></script>
+  <script type="text/javascript">
+    var letterName = '';
+
+    window.onload = function() {
+        letterName = getLetterName();
+        document.getElementById("title").innerHTML = letterName;
+    }
+
+    function handleButton() {
+        var key = document.getElementById('key').value;
+        handleDecryptButton(letterName, key);
+    }
+  </script>
+</body>
+
+</html>
