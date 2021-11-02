@@ -43,7 +43,7 @@ function handleDecryptButton(letterName, key) {
 }
 
 function handleEncryptButton() {
-    var key = document.getElementById('key').value;
+    var key = document.getElementById('cipher_key').value;
     var originalText = document.getElementById('original').value;
     var cipherText = _encrypt(originalText, key);
     document.getElementById('cipher').innerHTML = cipherText;

@@ -27,6 +27,28 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+div#cipher_panel {
+    margin: 3rem auto;
+}
+
+textarea#original {
+    margin-top: 1rem;
+    width: 100%;
+    height: 350px;
+}
+
+div#cipher {
+    background-color: lightslategray;
+    margin-top: 1rem;
+    white-space: normal;
+    word-break: break-all;
+}
+
+input#cipher_key {
+    margin-top: 1rme;
+    width: 100%
+}
+
 .flex-container {
     font-family: 'Noto Sans KR', sans-serif;
     display: flex;
